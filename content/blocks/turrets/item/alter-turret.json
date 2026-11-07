@@ -1,0 +1,164 @@
+{
+    "type": "ItemTurret",
+    "squareSprite": true,
+    "size": 1,
+    "health": 250,
+    "reload": 40,
+    "range": 160,
+    "maxAmmo": 20,
+    "recoil": 0.5,
+    "rotateSpeed": 10,
+    "shootCone": 15
+    "shootY": 2
+    "inaccuracy": 2
+    "shootSound": "shootDuo",
+    "researchCostMultiplier": 0.05,
+    "coolant": {
+        "type": "consumeCoolant",
+        "amount": 0.1,
+    },
+    "coolantMultiplier": 10,
+    
+    "drawer": {
+        "type": "drawTurret",
+        "parts": [
+            {
+                "type": "RegionPart"
+                "suffix": "-mid"
+                "under": true
+                "mirror": false
+                "moveY": -1.2
+                "progress": "recoil"
+            }
+        ]
+    },
+
+    
+    "ammoTypes": {
+
+        
+        "scrap": {
+            "type": "BasicBulletType",
+            "speed": 2.6
+            "damage": 10,
+            "lifetime": 60,
+            "ammoMultiplier": 2
+            "reloadMultiplier": 0.8
+            "frontColor": "B8705C"
+            "hitColor": "B8705C"
+            "backColor": "B8705C"
+            "trailColor": "B8705C"
+            
+            "shootEffect": [
+                {
+                    "type": "ParticleEffect"
+                    "line": true
+                    "lenFrom": 5
+                    "lenTo": 0
+                    "strokeFrom": 1.5
+                    "strokeTo": 0
+                    "cone": 30
+                    "lifetime": 20
+                    "colorFrom": "B8705C"
+                    "colorTo": "B8705C"
+                }
+            ],
+            
+            "hitEffect": [
+                {
+                    "type": "ParticleEffect"
+                    "line": true
+                    "lenFrom": 5
+                    "lenTo": 0
+                    "strokeFrom": 1.5
+                    "strokeTo": 0
+                    "cone": 440
+                    "lifetime": 20
+                    "colorFrom": "B8705C"
+                    "colorTo": "B8705C"
+                }
+            ],
+            
+            "despawnEffect": [
+                {
+                    "type": "ParticleEffect"
+                    "particles": 12
+                    "sizeFrom": 5
+                    "sizeTo": 0
+                    "lifetime": 20
+                    "cone": 360
+                    "colorFrom": "4a4a4a"
+                    "colorTo": "4a4a4a"
+                }
+            ]
+        },
+
+        
+        "lead": {
+            "type": "BasicBulletType",
+            "width": 8
+            "height": 13
+            "speed": 2.5
+            "damage": 18,
+            "lifetime": 60,
+            "ammoMultiplier": 1
+            "frontColor": "ab99d3"
+            "hitColor": "ab99d3"
+            "backColor": "ab99d3"
+            "trailColor": "ab99d3"
+            
+            "shootEffect": [
+                {
+                    "type": "ParticleEffect"
+                    "line": true
+                    "lenFrom": 5
+                    "lenTo": 0
+                    "strokeFrom": 1.5
+                    "strokeTo": 0
+                    "cone": 30
+                    "lifetime": 20
+                    "colorFrom": "ab99d3"
+                    "colorTo": "ab99d3"
+                }
+            ],
+            
+            "hitEffect": [
+                {
+                    "type": "ParticleEffect"
+                    "line": true
+                    "lenFrom": 5
+                    "lenTo": 0
+                    "strokeFrom": 1.5
+                    "strokeTo": 0
+                    "cone": 440
+                    "lifetime": 20
+                    "colorFrom": "ab99d3"
+                    "colorTo": "ab99d3"
+                }
+            ],
+            
+            "despawnEffect": [
+                {
+                    "type": "ParticleEffect"
+                    "particles": 12
+                    "sizeFrom": 5
+                    "sizeTo": 0
+                    "lifetime": 20
+                    "cone": 360
+                    "colorFrom": "4a4a4a"
+                    "colorTo": "4a4a4a"
+                }
+            ]
+        },
+    },
+
+    
+    "requirements": [
+        "lead/30",
+        "copper/10"
+    ],
+    
+    "envRequired": 0,
+    "category": "turret",
+    "research": "duo"
+}
