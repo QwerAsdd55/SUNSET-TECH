@@ -1,0 +1,40 @@
+{
+  "type": "PowerTurret",
+  "category": "turret",
+  "size": 1,
+  "health": 260,
+  "recoil": 1,
+  "reload": 70,
+  "range": 120,
+  "rotateSpeed": 7,
+  "targetAir": false,
+  "requirements": [
+    "copper/50",
+    "lead/32",
+    "silicon/20",
+  ],
+    
+  "coolant": {
+    "type": "consumeCoolant",
+    "amount": 0.1,
+  },
+  "shootSound": "none",
+
+  "consumes": {
+    "power": 3.5,
+  },
+
+  "shootType": {
+    "type": "LaserBulletType",
+    "damage": 50,
+    "buildingDamageMultiplier": 0.25,
+    "armorMultiplier": 3,
+    "lifetime": 15,
+    "drawSize": 300,
+    "collidesAir": false,
+    "length": 124,
+    "width": 8,
+    "pierceCap": 3,
+    "shootEffect": "none",
+  },
+}
