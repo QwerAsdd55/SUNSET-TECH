@@ -37,7 +37,6 @@
     
     "ammoTypes": {
 
-        
         "scrap": {
             "type": "BasicBulletType",
             "speed": 2.6
@@ -93,7 +92,6 @@
                 },
             ],
         },
-
         
         "lead": {
             "type": "BasicBulletType",
@@ -138,6 +136,68 @@
                 },
             ],
             
+            "despawnEffect": [
+                {
+                    "type": "ParticleEffect",
+                    "particles": 12,
+                    "sizeFrom": 5,
+                    "sizeTo": 0,
+                    "lifetime": 20,
+                    "cone": 360,
+                    "colorFrom": "4a4a4a",
+                    "colorTo": "4a4a4a",
+                },
+            ],
+        },
+
+        "lead-brick": {
+            "type": "BasicBulletType",
+            "width": 8,
+            "height": 15,
+            "speed": 2.8,
+            "damage": 26,
+            "lifetime": 60,
+            "ammoMultiplier": 2,
+            "rangeChange": 16,
+            "reloadMultiplier": 0.8,
+            "lightningDamage": 5,
+            "lightning": 2,
+            "lightningLength": 3,
+            "frontColor": "8667d6",
+            "hitColor": "8667d6",
+            "backColor": "8667d6",
+            "trailColor": "8667d6",
+
+            "shootEffect": [
+                {
+                    "type": "ParticleEffect",
+                    "line": true,
+                    "lenFrom": 3,
+                    "lenTo": 0,
+                    "strokeFrom": 0.8,
+                    "strokeTo": 0.5,
+                    "cone": 30,
+                    "lifetime": 10,
+                    "colorFrom": "84ff47",
+                    "colorTo": "84ff47",
+                },
+            ],
+
+            "hitEffect": [
+                {
+                    "type": "ParticleEffect",
+                    "line": true,
+                    "lenFrom": 5,
+                    "lenTo": 0,
+                    "strokeFrom": 1.5,
+                    "strokeTo": 0,
+                    "cone": 440,
+                    "lifetime": 20,
+                    "colorFrom": "8667d6",
+                    "colorTo": "8667d6",
+                },
+            ],
+
             "despawnEffect": [
                 {
                     "type": "ParticleEffect",
