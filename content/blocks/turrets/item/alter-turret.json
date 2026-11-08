@@ -48,7 +48,6 @@
             "hitColor": "B8705C",
             "backColor": "B8705C",
             "trailColor": "B8705C",
-            "knockback": 100,
             
             "shootEffect": [
                 {
