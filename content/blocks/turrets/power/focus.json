@@ -18,7 +18,7 @@
     "type": "consumeCoolant",
     "amount": 0.1,
   },
-  "shootSound": "none",
+  "shootSound": "shootLancer",
 
   "consumes": {
     "power": 3.5,
@@ -36,5 +36,6 @@
     "width": 8,
     "pierceCap": 3,
     "shootEffect": "none",
+    "ammoMultiplier": 1,
   },
 }
